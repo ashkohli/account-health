@@ -1,1 +1,1 @@
-SELECT Count(Id), Account.Name from Contact Group by Account.Name
+SELECT AccountId, Account.Name, Count(Id) contactCount FROM Contact WHERE AccountId != null GROUP BY AccountId, Account.Name
