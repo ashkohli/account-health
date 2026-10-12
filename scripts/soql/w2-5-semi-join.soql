@@ -1,0 +1,1 @@
+SELECT Id, Name from Account WHERE Id IN (SELECT AccountId from)

@@ -1,0 +1,1 @@
+SELECT Id, (SELECT Id from Contacts) from Account

@@ -1,0 +1,1 @@
+SELECT Id, Account.Name, Account.Industry from Contact

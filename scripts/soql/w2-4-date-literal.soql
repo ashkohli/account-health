@@ -1,0 +1,1 @@
+SELECT Id, CreatedDate from Contact where CreatedDate = LAST_N_DAYS:7

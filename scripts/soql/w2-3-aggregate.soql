@@ -1,0 +1,1 @@
+SELECT Count(Id), Account.Name from Contact Group by Account.Name
