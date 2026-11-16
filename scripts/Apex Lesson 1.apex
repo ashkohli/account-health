@@ -1,5 +1,5 @@
 String name = 'Ashmita';
-Date today = Date.today(); 
+Date todayDate = Date.today(); 
 Integer count = 30; 
 Decimal price = 120.59;
 Boolean isActive = true; 
@@ -15,7 +15,7 @@ System.debug('30 days from today is ' + today.addDays(count));
 System.debug('The price rounded down to 0 decimal places ' + price.round());
 System.debug('The name in lowercase looks like this ' + name.toLowerCase());
 
-//Assertion framework: Asser.areEqual(Expected, Actual, error message);
+//Assertion framework: Assert.areEqual(Expected, Actual, error message);
 
-Assert.areEqual(121, price.round(), 'Price of 120.59 should round up to 121');
-Assert.areEqual(Date.today().addDays(30), today.addDays(count), 'The date should be 2026-11-16T00:00:00.000Z');
+Assert.areEqual(121L, price.round(), 'Rounded to 0 decimal places');
+Assert.areEqual(Date.today().addDays(30), today.addDays(count), 'The date should be 30 days from today');
