@@ -11,11 +11,11 @@ Id clientId;
 //x++; this is where the null pointer exception will get thrown because you are adding 1 to null
 //system.debug('When x is used in a counter, it equals ' + x);
 */
-System.debug('30 days from today is ' + today.addDays(count));
+System.debug('30 days from today is ' + todayDate.addDays(count));
 System.debug('The price rounded down to 0 decimal places ' + price.round());
 System.debug('The name in lowercase looks like this ' + name.toLowerCase());
 
 //Assertion framework: Assert.areEqual(Expected, Actual, error message);
 
 Assert.areEqual(121L, price.round(), 'Rounded to 0 decimal places');
-Assert.areEqual(Date.today().addDays(30), today.addDays(count), 'The date should be 30 days from today');
+Assert.areEqual(Date.today().addDays(30), todayDate.addDays(count), 'The date should be 30 days from today');
