@@ -12,7 +12,7 @@ Id clientId;
 //system.debug('When x is used in a counter, it equals ' + x);
 */
 System.debug('30 days from today is ' + todayDate.addDays(count));
-System.debug('The price rounded down to 0 decimal places ' + price.round());
+System.debug('The price rounded up to 0 decimal places ' + price.round());
 System.debug('The name in lowercase looks like this ' + name.toLowerCase());
 
 //Assertion framework: Assert.areEqual(Expected, Actual, error message);
